@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="home">
+        <h2>Agrinho</h2>
+        <p>Descubra como a tecnologia está transformando a agricultura e aumentando a eficiência na produção de alimentos.</p>
+        <img src="https://efectoresponsable.pe/wp-content/uploads/2021/02/NP_Riego-inteligente_Hidraulica-1.jpeg" alt="Tecnologia na Agricultura" width="600">
+    </section>
+
+    <section id="Informações">
+        <h2>Informações</h2>
+        <p>A tecnologia na agricultura envolve o uso de inovações como drones, sensores, automação e inteligência artificial para otimizar a produção agrícola, melhorar a sustentabilidade e aumentar a eficiência.</p>
+    </section>
+
+    <section id="beneficios">
+        <h2></h2>
+        <ul>
+            <li>Monitoramento em tempo real das culturas</li>
+            <li>Uso eficiente de recursos naturais</li>
+            <li>Aumento da produtividade e redução de custos</li>
+            <li>Redução do impacto ambiental</li>
+        </ul>
+    </section>
+
+    <section id="perguntas">
+        <h2>Perguntas Interativas</h2>
+        <div class="pergunta">
+            <p>Qual é a principal vantagem da agricultura de precisão?</p>
+            <button onclick="mostrarOpcoes('opcoes1')">Ver Opções</button>
+            <div id="opcoes1" class="opcoes">
+                <button onclick="verificarResposta(this, 'correta1')">Uso eficiente dos recursos</button>
+                <button onclick="verificarResposta(this, 'incorreta')">Aumento do uso de pesticidas</button>
+                <button onclick="verificarResposta(this, 'incorreta')">Menor produtividade</button>
+            </div>
+            <p id="correta1" class="resposta">Correto! A agricultura de precisão permite um uso mais eficiente dos recursos e uma melhor gestão das culturas.</p>
+        </div>
+        <div class="pergunta">
+            <p>Como os drones são usados na agricultura?</p>
+            <button onclick="mostrarOpcoes('opcoes2')">Ver Opções</button>
+            <div id="opcoes2" class="opcoes">
+                <button onclick="verificarResposta(this, 'correta2')">Monitoramento de culturas</button>
+                <button onclick="verificarResposta(this, 'incorreta')">Apenas para transporte de sementes</button>
+                <button onclick="verificarResposta(this, 'incorreta')">Para substituir tratores</button>
+            </div>
+            <p id="correta2" class="resposta">Correto! Os drones são usados para monitorar culturas, mapear terrenos e aplicar fertilizantes e pesticidas de forma precisa.</p>
+        </div>
+        <div class="pergunta">
+            <p>O que é hidroponia?</p>
+            <button onclick="mostrarOpcoes('opcoes3')">Ver Opções</button>
+            <div id="opcoes3" class="opcoes">
+                <button onclick="verificarResposta(this, 'correta3')">Cultivo sem solo</button>
+                <button onclick="verificarResposta(this, 'incorreta')">Uso excessivo de água</button>
+                <button onclick="verificarResposta(this, 'incorreta')">Método tradicional de cultivo</button>
+            </div>
+            <p id="correta3" class="resposta">Correto! Hidroponia é um método de cultivo de plantas sem solo, utilizando soluções nutritivas em água.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
